@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ClicBank - Jiva Configuration Management</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!-- IE Fixes -->
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ieFixes.css">
+		<![endif]-->
+	</head>
+	<body>
+		<div role="navigation" class="navbar navbar-fixed-top border-bottom-d4d4d4 header-gradient">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand font-color-333333"><span class="font-color-0088cc">Clic</span>Bank</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav pull-left">
+						<li>
+							<a href="#" class="notification-container"><i class="fa fa-envelope"></i><span class="notification-counter">25</span></a>
+						</li>
+						<li>
+							<a class="notification-container" href="#"><i class="fa fa-bell fa-rotate-45"></i><span class="notification-counter">17</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-long-arrow-left"></i></a>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="input-group">
+							<div class="input-group-btn">
+								<button type="button" class="btn  btn-default btn-sm">
+									<span class="margin-right-5px">Assessments</span><i class="fa fa-caret-down"></i>
+								</button>
+							</div>
+							<input type="text" class="form-control input-sm">
+							<div class="input-group-btn">
+								<button type="button" class="btn  btn-default btn-sm">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+
+					<div class="pull-right padding-top-15px">
+						<div class="padding-right-10px pull-left">
+							Username / Jiva 5.6
+						</div>
+						<div class="padding-right-10px pull-left">
+							<a href="#" class="margin-left-5px font-size-14px font-color-333333"><i class="fa fa-gear"></i></a>
+						</div>
+						<div class="padding-right-10px pull-left">
+							<a href="#" class="margin-left-5px font-size-14px font-color-333333"><i class="fa fa-power-off"></i></a>
+						</div>
+					</div>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<div class="module-header affix border-bottom-d4d4d4 background-color-ffffff">
+			<div class="container">
+				<div class="row module-header-details">
+					<div class="col-md-12 padding-top-10px padding-bottom-10px bold-text">
+						<div class="pull-left">
+							<ol class="breadcrumb padding-left-0px">
+								<li>
+									<a href="#">Username</a>
+								</li>
+								<li>
+									<a href="#">Workspaces</a>
+								</li>
+								<li>
+									Jiva 5.6
+								</li>
+							</ol>
+						</div>
+						<div class="pull-right">
+							<div class="btn-group">
+								<!-- <button class="btn  btn-default">
+								<i class="fa fa-clock-o font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+								<i class="fa fa-share-square-o font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+								<i class="fa fa-trash-o font-size-14px"></i>
+								</button> -->
+								<button class="btn  btn-default">
+									<i class="fa fa-download font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+									<i class="fa fa-save font-size-14px"></i>
+								</button>
+							</div>
+							<div class="btn-group">
+								<!-- <button class="btn  btn-default">
+								<i class="fa fa-ul font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+								<i class="fa fa-share-square-o font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+								<i class="fa fa-trash-o font-size-14px"></i>
+								</button> -->
+								<button class="btn  btn-default">
+									<i class="fa fa-list-ul font-size-14px"></i>
+								</button>
+								<button class="btn  btn-default">
+									<i class="fa fa-th-large font-size-14px"></i>
+								</button>
+								<button type="button" class="btn btn-default dropdown-toggle">
+									<span class="caret"></span>
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<div class="margin-left-20px">ACE</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Assessments
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Question Group
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Question
+											</label>
+										</div>
+									</li>
+									
+									<li>
+										<div class="margin-left-20px">POC</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												POC
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Problems
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Goals
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Interventions
+											</label>
+										</div>
+									</li>
+									
+									<li>
+										<div class="margin-left-20px">Sentinal</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Rules
+											</label>
+										</div>
+									</li>
+									
+									<li>
+										<div class="margin-left-20px">Code Tables</div>
+									</li>
+									<li>
+										<div class="checkbox margin-left-20px">
+											<label>
+												<input type="checkbox">
+												Lable 1
+											</label>
+										</div>
+									</li>
+									<li class="border-top-d4d4d4">
+										<div class="margin-left-20px margin-top-10px margin-bottom-5px">
+											<button class="btn btn-default">Done</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="pull-right margin-right-10px">
+							<button class="btn  btn-primary">
+								Commit
+							</button>
+						</div> -->
+						<div class="pull-right">
+							<a href="#" class="btn  btn-link"> <i class="fa fa-circle font-color-6cc009 margin-right-10px font-size-10px"></i> Active 2 of 4 collabarators </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="padding-top: 106px;" id="content-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 grouped-panel pinned">
+						<div class="row">
+							<div class="col-md-12 background-color-f6f8fb border-bottom-d4d4d4">
+								<div class="pull-left">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="bold-text">Assessments</span> </label>
+									</div>
+								</div>
+								<div class="pull-left margin-left-10px padding-top-5px margin-right-20px">
+									<a class="font-color-333333" href="#"><i class="fa fa-caret-down margin-left-5px margin-right-5px"></i></a>
+								</div>
+								<div class="grouped-panel-options">
+									<a class="pull-left visible" href="#"><i class="fa fa-trophy margin-left-5px margin-right-5px"></i></a>
+									<a class="pull-right" href="#"><i class="fa fa-times margin-left-5px margin-right-5px"></i></a>
+									<a class="pull-right" href="#"><i class="fa fa-link margin-left-5px margin-right-5px"></i></a>
+									<a class="pull-right" href="#"><i class="fa fa-filter margin-left-5px margin-right-5px"></i></a>
+									<a class="pull-right" href="#"><i class="fa fa-search margin-left-5px margin-right-5px"></i></a>
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="col-md-12 padding-bottom-5px padding-top-5px border-bottom-d4d4d4">
+									<div class="pull-left">
+										<input class="invisible" type="checkbox">
+									</div>
+									<div class="pull-left margin-left-10px padding-top-5px">
+										<a class="font-color-6cc009 font-size-14px" href="#"><i class="fa fa-plus margin-left-5px margin-right-5px"></i></a>
+										<a class="font-color-fc5959 font-size-14px margin-left-10px" href="#"><i class="fa fa-minus-circle margin-left-5px margin-right-5px"></i></a>
+									</div>
+									<div class="btn-group margin-left-10px">
+										<button type="button" class="btn btn-default dropdown-toggle border-none">
+											<span class="font-color-999999">More</span>
+										</button>
+										<ul class="dropdown-menu">
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Action</a>
+											</li>
+											<li>
+												<a href="#">Another action</a>
+											</li>
+											<li>
+												<a href="#">Something else here</a>
+											</li>
+											<li class="divider"></li>
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Separated link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4 padding-bottom-5px padding-top-5px">
+									<div class="clearfix">
+										Do you or anyone in your household smoke?
+									</div>
+									<div class="clearfix margin-top-5px">
+										<div class="radio">
+											<label>
+												<input type="radio">
+												Yes </label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio">
+												No </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4 padding-bottom-5px padding-top-5px">
+									<div class="clearfix">
+										Do you or anyone in your household smoke? Can the member's re-admission be attributed/linked to any of the following problems/issues?
+									</div>
+									<div class="clearfix margin-top-5px">
+										<div class="radio">
+											<label>
+												<input type="radio">
+												Yes </label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio">
+												No </label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 grouped-panel">
+						<div class="row">
+							<div class="col-md-12 background-color-f6f8fb border-bottom-d4d4d4">
+								<div class="pull-left">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											<span class="bold-text">Problems</span> </label>
+									</div>
+								</div>
+								<div class="pull-left margin-left-10px padding-top-5px margin-right-20px">
+									<a href="#" class="font-color-333333"><i class="fa fa-caret-down margin-left-5px margin-right-5px"></i></a>
+								</div>
+								<div class="grouped-panel-options">
+									<a href="#" class="pull-left"><i class="fa fa-trophy margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-times margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-link margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-filter margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-search margin-left-5px margin-right-5px"></i></a>
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="col-md-12 padding-bottom-5px padding-top-5px border-bottom-d4d4d4">
+									<div class="pull-left">
+										<input type="checkbox" class="invisible">
+									</div>
+									<div class="pull-left margin-left-10px padding-top-5px">
+										<a href="#" class="font-color-6cc009 font-size-14px"><i class="fa fa-plus margin-left-5px margin-right-5px"></i></a>
+										<a href="#" class="font-color-fc5959 font-size-14px margin-left-10px"><i class="fa fa-minus-circle margin-left-5px margin-right-5px"></i></a>
+									</div>
+									<div class="btn-group margin-left-10px">
+										<button class="btn btn-default dropdown-toggle border-none" type="button">
+											<span class="font-color-999999">More</span>
+										</button>
+										<ul class="dropdown-menu">
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Action</a>
+											</li>
+											<li>
+												<a href="#">Another action</a>
+											</li>
+											<li>
+												<a href="#">Something else here</a>
+											</li>
+											<li class="divider"></li>
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Separated link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox pull-left">
+										<label>
+											<input type="checkbox">
+											Title of group</label>
+									</div>
+									<a href class="pull-left padding-top-5px margin-left-10px"> <i class="fa fa-pencil-square-o font-size-14px"></i> </a>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											Another Name</label>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											Group Name here</label>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											Title of group</label>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											Another Name</label>
+									</div>
+								</div>
+								<div class="col-md-12 border-bottom-d4d4d4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">
+											Group Name here</label>
+									</div>
+								</div>
+								<div class="col-md-12 padding-top-5px border-bottom-d4d4d4">
+									<ul class="pagination pagination-sm">
+										<li>
+											<a href="#" class="font-color-333333"><i class="fa fa-step-backward"></i></a>
+										</li>
+										<li>
+											<a href="#" class="font-color-333333"><i class="fa fa-backward"></i></a>
+										</li>
+										<li>
+											<div class="pull-left margin-right-5px margin-left-5px padding-top-5px padding-bottom-5px">
+												Page : 5 of 15
+											</div>
+										</li>
+										<li>
+											<a href="#" class="font-color-333333"><i class="fa fa-forward"></i></a>
+										</li>
+										<li>
+											<a href="#" class="font-color-333333"><i class="fa fa-step-forward"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 grouped-panel">
+						<div class="row">
+							<div class="col-md-12 background-color-f6f8fb border-bottom-d4d4d4">
+								<div class="pull-left">
+									<div class="checkbox">
+										<label>
+											<span class="bold-text">Problems</span> </label>
+									</div>
+								</div>
+								<div class="pull-left margin-left-10px padding-top-5px margin-right-20px">
+									<a href="#" class="font-color-333333"><i class="fa fa-caret-down margin-left-5px margin-right-5px"></i></a>
+								</div>
+								<div class="grouped-panel-options">
+									<a href="#" class="pull-left"><i class="fa fa-trophy margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-times margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-link margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-filter margin-left-5px margin-right-5px"></i></a>
+									<a href="#" class="pull-right"><i class="fa fa-search margin-left-5px margin-right-5px"></i></a>
+								</div>
+							</div>
+							<div class="col-md-12 background-color-f6f8fb border-bottom-d4d4d4 padding-bottom-5px padding-top-5px">
+								<div class="pull-left">
+									<span class="bold-text"><i class="fa fa-arrow-left margin-right-5px"></i>The Problem Title Goes Here</span>
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="col-md-12 padding-bottom-5px padding-top-5px border-bottom-d4d4d4">
+									<div class="pull-left">
+										<input type="checkbox" class="invisible">
+									</div>
+									<div class="pull-left margin-left-10px padding-top-5px">
+										<a href="#" class="font-color-6cc009 font-size-14px"><i class="fa fa-plus margin-left-5px margin-right-5px"></i></a>
+										<a href="#" class="font-color-fc5959 font-size-14px margin-left-10px"><i class="fa fa-minus-circle margin-left-5px margin-right-5px"></i></a>
+									</div>
+									<div class="btn-group margin-left-10px">
+										<button class="btn btn-default dropdown-toggle border-none" type="button">
+											<span class="font-color-999999">More</span>
+										</button>
+										<ul class="dropdown-menu">
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Action</a>
+											</li>
+											<li>
+												<a href="#">Another action</a>
+											</li>
+											<li>
+												<a href="#">Something else here</a>
+											</li>
+											<li class="divider"></li>
+											<li class="dropdown-header">
+												Dropdown header
+											</li>
+											<li>
+												<a href="#">Separated link</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</body>
+</html>

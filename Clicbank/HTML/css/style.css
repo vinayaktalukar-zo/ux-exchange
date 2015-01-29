@@ -1,0 +1,1466 @@
+/*
+ *
+ *	Jiva 5.x
+ *  The awesome styles defined for Jiva 5.x
+ *  ------------------------------------------------------------------------------
+ * 	This CSS File Includes Bootstrap Elements.
+ * 	As the necessity of the design, most of the default behaviour of the bootstrap elements
+ * 	have ben changed accordingly.
+ * 	As a result, first the bootstrap.css is cooopied and most of the css classes are overridden later part of the file.
+ *
+ *  Author - Shridhar Baddur
+ *  ------------------------------------------------------------------------------
+ *
+ */
+/* * Styles to avoid conflicts with jiva.css * */
+/* Starts */
+legend {
+	width: auto;
+}
+.container {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Ends */
+label {
+	font-weight: normal;
+}
+td.multilined-title {
+	width: 80%;
+}
+td.multilined-title a:hover {
+	text-decoration: none;
+}
+/*.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	vertical-align: middle;
+}*/
+th {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.table > thead > tr > th.nested-table-padding-0px, 
+.table > tbody > tr > th.nested-table-padding-0px, 
+.table > tfoot > tr > th.nested-table-padding-0px, 
+.table > thead > tr > td.nested-table-padding-0px, 
+.table > tbody > tr > td.nested-table-padding-0px, 
+.table > tfoot > tr > td.nested-table-padding-0px {
+	padding: 0px;
+}
+.form-control, .dropdown-menu {
+	font-size: 12px;
+}
+.modal {
+	overflow-y: auto;
+}
+.btn-group > .btn:hover, .btn-group-vertical > .btn:hover, .btn-group > .btn:focus, .btn-group-vertical > .btn:focus, .btn-group > .btn:active, .btn-group-vertical > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn.active {
+	z-index: inherit;
+}
+body {
+	font-size: 12px;
+}
+.btn {
+	font-size: 12px;
+}
+.breadcrumb {
+	background-color: inherit;
+	margin-bottom: 0px;
+	padding: 7px 15px;
+}
+.breadcrumb > li + li:before {
+	content: ">";
+}
+/* * Styles for App Navigation Bar * */
+.navbar {
+	min-height: 24px;
+}
+.navbar-inverse {
+	background-color: #333333;
+}
+.navbar-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navbar-brand {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #bbbbbb;
+}
+.center-navigation-links {
+	width: 400px;
+	margin: 0 auto;
+}
+.center-navigation-links [class^="icon-"] {
+	margin-right: 5px;
+	font-size: 16px;
+}
+.notification-counter {
+	background-color: #d4130d;
+	border-radius: 2px;
+	color: #ffffff;
+	font: bold 10px Arial;
+	padding: 0 3px;
+	position: absolute;
+	left: 26px;
+	top: 16px;
+}
+.fa-rotate-45 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.line-height-20px {
+	line-height: 20px;
+}
+.module-header {
+	padding-top: 31px;
+	width: 100%;
+	z-index: 1;
+}
+.module-header-details {
+	background: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 37%, #F0F0F0 66%, #E5E5E5 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	height: 40px;
+}
+.modal-header {
+	padding: 0;
+}
+.modal-header h4, .modal-header .close {
+	padding: 10px 15px;
+}
+.modal-header .close {
+
+}
+.modal-body {
+	padding: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.modal-footer {
+	margin-top: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+}
+.modal-body .radio, .modal-body .checkbox {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.modal-body .radio input[type="radio"], .modal-body .radio-inline input[type="radio"], .modal-body .checkbox input[type="checkbox"], .modal-body .checkbox-inline input[type="checkbox"] {
+	margin-top: 1px;
+}
+.modal-sub-title {
+	border-top: 1px solid #EEEEEE;
+	padding: 5px 15px;
+}
+.mandatory-field-asterisk {
+	position: relative;
+	top: -5px;
+	right: -2px;
+}
+.module-actions {
+	background: none repeat scroll 0 0 #FFFFFF;
+	min-height: 35px;
+}
+.pagination {
+	margin: 0;
+}
+
+/* Styles for clicbank starts */
+/*html, body {
+ height: 100%;
+ }
+ #content-main {
+ min-height: calc(100% - 130px);
+ }*/
+.workspaces-three-columns-inner-action-bar, .workspaces-two-columns-inner-action-bar, .workspaces-one-column-inner-action-bar {
+	position: fixed;
+	clear: both;
+	width: calc(100% - 630px);
+	background: #FFFFFF;
+	padding: 10px 0;
+	margin: 0 -15px;
+	border-bottom: 1px solid #EEEEEE;
+	z-index: 1;
+	background: #FFFFFF;
+}
+.workspaces-two-columns-inner-action-bar {
+	width: calc(100% - 275px)
+}
+.workspaces-one-column-inner-action-bar {
+	width: 100%;
+	border-bottom: 1px solid #D4D4D4;
+}
+.table > thead > tr > th > input[type='checkbox'], .table > tbody > tr > td > input[type='checkbox'] {
+	margin-left: 10px;
+}
+.navbar-brand, .module-header .breadcrumb > li {
+	font-size: 14px;
+}
+.btn-success {
+	background: #1dae43;
+}
+.table > thead > tr > th {
+	border-width: 1px;
+}
+.table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-bottom: 1px solid #EEEEEE;
+}
+.table > thead > tr > td.border-0080ff-2px, 
+.table > tbody > tr > td.border-0080ff-2px, 
+.table > tfoot > tr > td.border-0080ff-2px {
+	border: solid #0080ff;
+	border-width: 2px;
+}
+th.checkbox-container {
+	width: 40px;
+}
+.label {
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+.label-default {
+	background: #777777;
+}
+.table-hover > tbody > tr.background-color-e0f9ff:hover, .table-hover > tbody > tr.background-color-e0f9ff:hover {
+	background: #e0f9ff;
+}
+.navbar-fixed-top {
+	z-index: 2;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background: inherit;
+	color: #666666;
+	outline: none;
+}
+.nav > li > a {
+	color: #333333;
+	padding: 15px;
+	font-size: 12px;
+}
+.activity-tabs > li > a {
+	padding: 5px 15px;
+	margin-top: 5px;
+}
+.duplicate-grouped-panel-indicator {
+	float: left;
+	font-size: 16px;
+	position: absolute;
+	right: -9px;
+	top: 25%;
+	z-index: 0;
+}
+.grouped-panel.pinned {
+	min-height: 500px;
+}
+.pagination-sm > li > a, .pagination-sm > li > span {
+	font-size: 8px;
+	color: #999999;
+	border: none;
+}
+.grouped-panel {
+	border: 1px solid #D4D4D4;
+	min-height: 200px;
+}
+.grouped-panel .checkbox {
+	margin-bottom: 0px;
+}
+.grouped-panel-options a, .show-actions-on-hover-options a {
+	visibility: hidden;
+	padding: 5px;
+}
+.show-actions-on-hover-options a {
+	visibility: hidden;
+	padding: 0 5px;
+}
+.grouped-panel:hover .grouped-panel-options a, .show-actions-on-hover-container:hover .show-actions-on-hover-options a  {
+	visibility: visible;
+}
+.grouped-panel-options a.visible {
+	visibility: visible;
+	background: #CCCCCC;
+}
+/*.module-header-details {
+ border-bottom: none;
+ }*/
+.form-signin-container {
+	height: 353px;
+	left: 50%;
+	margin: -180px auto 0 -165px;
+	max-width: 330px;
+	overflow: auto;
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+}
+.navbar-brand {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navbar-form {
+	width: 50%;
+	padding-left: 72px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.navbar-nav.pull-right {
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+.navbar-nav.pull-right li a {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.module-header {
+	padding-top: 51px;
+}
+.module-header-details {
+	background: #FFFFFF;
+}
+.module-header .breadcrumb > li + li:before {
+	content: "/";
+	color: #333333;
+}
+.module-header .breadcrumb > li a {
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+}
+.module-header .breadcrumb > .active {
+	color: #666666;
+}
+
+/* Styles for clicbank Ends */
+
+/* * * * * * * * * * * * * * * * Styles For POC * * * * * * * * * * * * * * * * * * * * * * */
+
+.problem-container {
+	/*padding-top: 5px;*/
+}
+.filter-container {
+
+}
+.added-filter-star {
+	left: -6px;
+	position: relative;
+	top: -7px;
+}
+.added-filter-notification {
+	background: none repeat scroll 0 0 #F9EDBE;
+	border: 1px solid #F0C36D;
+	border-radius: 12px;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 20px;
+	position: fixed;
+	top: 44px;
+	z-index: 2;
+}
+.poc.module-header {
+	padding-top: 0;
+}
+.poc.module-header .nav a.active {
+	font-weight: bold;
+	border-bottom: 2px solid #666666;
+	/*margin-top: -2px;*/
+}
+.data-header .checkbox {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.data-header .checkbox label {
+	font-weight: inherit;
+}
+.data-header input[type="checkbox"] {
+	margin-top: 2px;
+}
+.intervention {
+	/*padding-top: 5px;*/
+}
+.problem-container.disabled, .goal-container.disabled, .intervention.disabled, .intervention-container.disabled {
+	opacity: 0.5;
+}
+.intervention .checkbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.intervention input[type="checkbox"] {
+	margin-top: 2px;
+}
+a.disabled:hover, a.disabled:focus {
+	color: #666666;
+	text-decoration: none;
+	cursor: not-allowed;
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+/**************************************************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Styles used for assessments Starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/* * Assessment Layout - Starts * */
+/**************************************************************************************************************************************************/
+
+.assessment-left, .pr-left, .fax-intake-inner-left {
+	float: left;
+	width: 275px;
+	height: 100%;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For all Gecko based browsers */
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+.assessment-left, .provider-dashboards-left, .fax-intake-left {
+	width: 265px;
+	overflow-y: auto;
+	float: left;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For all Gecko based browsers */
+	box-sizing: border-box;
+}
+.provider-dashboards-left, .fax-intake-left {
+	width: 350px;
+}
+.assessment-left {
+	width: 265px;
+	background: #dddddd;
+	overflow-y: auto;
+	float: left;
+}
+.assessment-right {
+	float: left;
+	margin-left: 265px;
+}
+.provider-dashboards-right, .fax-intake-right {
+	padding-right: 15px;
+    width: calc(100% - 350px);
+	float: left;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For all Gecko based browsers */
+	box-sizing: border-box;
+}
+.fax-intake-right .table {
+	margin-bottom: 0px;
+}
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+	border-bottom-width: 1px;
+}
+.fax-intake-inner-right {
+	margin-left: 275px;
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For all Gecko based browsers */
+	box-sizing: border-box;
+}
+.assessment-questionnaire-left {
+	/*    width: 300px;
+	 float: left;*/
+	margin-right: 650px;
+}
+.assessment-questionnaire-middle {
+	/*margin-left: 300px;
+	 margin-right: 100px;*/
+	float: right;
+	width: 150px;
+	text-align: right;
+}
+.assessment-questionnaire-right {
+	/*width: 100px;
+	 float: right;*/
+	width: 500px;
+	float: right;
+}
+
+.group-score-display {
+	width: 150px;
+	float: left;
+	text-align: right;
+}
+.ze-toggle .toggle {
+	display: none;
+}
+.ze-toggle .fa-caret:before {
+	content: "\f0d7";
+}
+.ze-toggle {
+	padding-right: 0;
+}
+.fa-caret:before {
+	content: "\f0d8";
+}
+/**************************************************************************************************************************************************/
+/* * Intake Faxes - Starts * */
+/**************************************************************************************************************************************************/
+
+.add-fax-btn, .move-fax-btn, .refresh-fax-btn {
+	width: 104px;
+	text-align: center;
+}
+
+/**************************************************************************************************************************************************/
+/* * Intake Faxes - Ends * */
+/**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/* * Assessment Layout - Ends * */
+/**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/* * Icons In Tree Stucure - Starts * */
+/**************************************************************************************************************************************************/
+
+.symbol-leaf-node, .symbol-open, .symbol-close, .symbol-unread, .symbol-complete, .symbol-incomplete {
+	float: left;
+	height: 1em;
+	width: 16px;
+	margin-right: 5px;
+	position: absolute;
+	left: 20px;
+}
+.symbol-open {
+	background: #dddddd;
+}
+.symbol-close {
+	background: #000000;
+}
+.symbol-leaf-node {
+	background: blue;
+}
+.symbol-unread {
+	background: #F7819F;
+}
+.symbol-complete {
+	color: #6CC009;
+}
+.symbol-incomplete {
+	color: #FFBF00;
+}
+.symbol-current, .symbol-current a {
+	font-weight: bold;
+	color: #333;
+}
+/**************************************************************************************************************************************************/
+/* * Icons In Tree Stucure - Ends * */
+/**************************************************************************************************************************************************/
+
+.node-label {
+	cursor: pointer;
+}
+.tree-menu-level-0.node-label {
+	margin-left: 40px;
+}
+.tree-menu-level-1.node-label {
+	margin-left: 60px;
+}
+.tree-menu-level-2.node-label {
+	margin-left: 80px;
+}
+.assessment-question-compulsary-icon, .assessment-notes-icon, .pr-checkbox-container, .fax-intake-checkbox-container {
+	width: 20px;
+	float: left;
+}
+.assessment-question-container, .assessment-notes-container, .pr-request-details-container, .fax-intake-details-container {
+	margin-left: 20px;
+}
+.assessment-notes-container {
+	margin-right: 60px;
+	word-wrap: break-word;
+}
+.questionnaire-level-1.assessment-questionnaire-left {
+
+}
+.questionnaire-level-2.assessment-questionnaire-left {
+
+}
+.inner-level-1, .inner-level-2 {
+	margin-left: 20px;
+	border-left: 1px solid #d4d4d4;
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}
+.assessment-questionnaire-level-caret {
+	border-color: transparent transparent #F7F7F7;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	height: 0;
+	left: 50px;
+	top: 1px;
+	position: relative;
+	width: 0;
+}
+
+/**************************************************************************************************************************************************/
+/* * Add New Assessment Layout Styles - Starts * */
+/**************************************************************************************************************************************************/
+
+.assessment-new-left {
+	/*    width: 300px;
+	 float: left;*/
+	margin-right: 650px;
+	max-width: 800px;
+}
+.assessment-new-middle {
+	/*margin-left: 300px;
+	 margin-right: 100px;*/
+	float: right;
+	width: 150px;
+	text-align: right;
+}
+.assessment-new-right {
+	/*width: 100px;
+	 float: right;*/
+	width: 500px;
+	float: right;
+}
+.add-assessment-search-results {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 330px;
+}
+.assessments-record-selected {
+	background-color: #2e3235;
+	box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.5) inset, 0 -2px 5px -3px rgba(0, 0, 0, 0.5) inset;
+	-webkit-box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.5) inset, 0 -2px 5px -3px rgba(0, 0, 0, 0.5) inset;
+	-moz-box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.5) inset, 0 -2px 5px -3px rgba(0, 0, 0, 0.5) inset;
+}
+.question-group {
+	color: #aaaaaa;
+}
+.question-group div.question-group-label {
+	padding: 5px 0;
+}
+.question-group-label.currently-opened {
+	color: #EEEEEE;
+}
+/**************************************************************************************************************************************************/
+/* * Add New Assessment Layout Styles - Ends * */
+/**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Styles used for assessments Ends* */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/* * Tooltip Styles - Starts * */
+/**************************************************************************************************************************************************/
+
+.tooltip {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+	position: relative;
+}
+.tooltip div.classic {
+	margin-left: -999em;
+	position: absolute;
+	font-size: 12px;
+	/*padding: 1em 1em;*/
+	float: left;
+	text-align: left;
+}
+.tooltip div.classic {
+	color: #aaaaaa;
+}
+.tooltip:hover div.classic {
+	border-radius: 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: -130px;
+	top: 28px;
+	z-index: 99;
+	margin-left: 0;
+	min-width: 250px;
+}
+.tooltip:hover div.classic span.tooltip-arrow {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border-color: transparent;
+	border-style: solid;
+	margin-left: -10px;
+	border-bottom-color: #333;
+	border-width: 0 10px 10px;
+	float: left;
+}
+.tooltip:hover em {
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	padding: 0.2em 0 0.6em 0;
+}
+.classic {
+	/*padding: 0.8em 1em;*/
+}
+.custom {
+	padding: 0.5em 0.8em 0.8em 2em;
+}
+* html a:hover {
+	background: transparent;
+}
+.classic {
+	background-color: #333333;
+	border: 1px solid #000000;
+}
+.critical {
+	background: #FFCCAA;
+	border: 1px solid #FF3334;
+}
+.help {
+	background: #9FDAEE;
+	border: 1px solid #2BB0D7;
+}
+.info {
+	background: #9FDAEE;
+	border: 1px solid #2BB0D7;
+}
+.warning {
+	background: #FFFFAA;
+	border: 1px solid #FFAD33;
+}
+.tooltip h1, .tooltip h2, .tooltip h3, .tooltip h4, .tooltip h5, .tooltip h6 {
+	color: #aaaaaa;
+}
+.tooltip .problem-container-without-source, .tooltip .goal-container-without-source, .tooltip .intervention-container-without-source {
+	background: inherit;
+}
+.tooltip .goal-container-without-source, .tooltip .intervention-container-without-source {
+	border-left: 1px solid #d4d4d4;
+}
+.tooltip .goal-container-without-source {
+	width: 66.9%;
+	float: left;
+}
+.tooltip .intervention-container-without-source {
+	width: 49.7%;
+	float: left;
+}
+.modal-header {
+	background: #ffffff;
+	z-index: 1;
+	/*position: fixed;
+	 width: calc(100% - 30px);*/
+}
+/*.modal-body {
+ padding: 0;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-top: 57px;
+ }*/
+/*.modal-footer {
+ margin-top: 0;
+ padding-left: 15px;
+ padding-right: 15px;
+ text-align: left;
+ background: #ffffff;
+ z-index: 1;
+ width: calc(100% - 30px);
+ }*/
+.modal-content {
+}
+.radio, .checkbox {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+	margin-top: 1px;
+}
+/**************************************************************************************************************************************************/
+/* * Tooltip Styles - Ends * */
+/**************************************************************************************************************************************************/
+
+/* * Helper Classes Starts * */
+/*
+ *
+ * These Classes are used over the appliation either to apply some css properties or to override the already defined properties
+ * To override already defined properties, these classes are defined at the bottom of the document.
+ *
+ */
+/**************************************************************************************************************************************************/
+.header-gradient {
+	background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjdmN2Y3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #ffffff 10%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 10%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 10%,#f7f7f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 10%,#f7f7f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 10%,#f7f7f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-8 */
+}
+.background-color-f9edbe {
+	background: #f9edbe;
+}
+.background-color-e0f9ff {
+	background: #e0f9ff;
+}
+.background-color-f9f9f9 {
+	background: #f9f9f9;
+}
+.background-color-f6f8fb {
+	background: #f6f8fb;
+}
+.background-color-90c08b {
+	background: #90c08b;
+}
+.background-color-fcf9c7 {
+	background: #fcf9c7;
+}
+.background-color-f9f9fa {
+	background: #f9f9fa;
+}
+.background-color-f4f4f5 {
+	background: #f4f4f5;
+}
+.background-color-eeeeee {
+	background: #eeeeee;
+}
+.background-color-f7f7f7 {
+	background: #f7f7f7;
+}
+.background-color-fffcdd {
+	background: #fffcdd;
+}
+.background-color-ffffff {
+	background-color: #ffffff;
+}
+.background-color-c4e3f3 {
+	background-color: #c4e3f3;
+}
+.background-color-fefac2 {
+	background: #fefac2;
+}
+.circular-background-color-aaaaaa {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #aaaaaa;
+	padding: 5px;
+}
+.circular-background-color {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 5px;
+}
+.background-color-333333 {
+	background: #333333;
+	color: #ffffff;
+}
+.background-color-fffede {
+	background: #fffede;
+}
+.background-color-fba16c {
+	background: #fba16c;
+}
+.background-color-cd9b9b {
+	background: #cd9b9b;
+}
+.background-color-eee9e9 {
+	background: #eee9e9;
+}
+.background-color-fec9c9 {
+	background: #fec9c9;
+}
+.background-color-494e51 {
+	background: #494e51;
+}
+.background-color-cccccc {
+	background: #CCCCCC;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Override the Default Background Ends */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.font-color-e93207 {
+	color: #e93207;
+}
+.font-color-333333 {
+	color: #333333;
+}
+.font-color-0088cc {
+	color: #0088cc;
+}
+.font-color-aaaaaa {
+	color: #aaaaaa;
+}
+.font-color-ffbf00 {
+	color: #ffbf00;
+}
+.font-color-ffffff {
+	color: #ffffff;
+}
+.font-color-6cc009 {
+	color: #6cc009;
+}
+.font-color-fe9a2e {
+	color: #fe9a2e;
+}
+.font-color-666666 {
+	color: #666666;
+}
+.font-color-e7e7e7 {
+	color: #e7e7e7;
+}
+.font-color-cccccc {
+	color: #cccccc;
+}
+.font-color-eeeeee {
+	color: #eeeeee;
+}
+.font-color-7f7f7f {
+	color: #7f7f7f;
+}
+.font-color-0090FF {
+	color: #0090ff;
+}
+.font-color-fc5959 {
+	color: #fc5959;
+}
+.font-color-999999 {
+	color: #999999;
+}
+.font-color-72a7da {
+	color: #72a7da;
+}
+.font-color-666666 {
+	color: 666666;
+}
+.font-color-6cc009 {
+	color: 6cc009;
+}
+.font-color-ffbf00 {
+	color: #FFBF00;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Override the Default Font Color Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Changing Font-Weight from normal to bold and Font-Style from normal to Italics starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.italic-text {
+	font-style: italic;
+}
+.bold-text {
+	font-weight: bold;
+}
+.normal-text {
+	font-weight: normal;
+}
+.font-size-10px {
+	font-size: 10px;
+}
+.font-size-12px {
+	font-size: 12px;
+}
+.font-size-14px {
+	font-size: 14px;
+}
+.font-size-16px {
+	font-size: 16px;
+}
+.font-size-18px {
+	font-size: 18px;
+}
+.font-size-20px {
+	font-size: 20px;
+}
+.font-size-24px {
+	font-size: 24px;
+}
+.font-size-32px {
+	font-size: 32px;
+}
+.font-size-40px {
+	font-size: 40px;
+}
+.font-size-50px {
+	font-size: 50px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Changing Font-Weight from normal to bold and Font-Style from normal to Italics Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage borders Starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.border-right-eeeeee {
+	border-right: 1px solid #eeeeee;
+}
+.border-left-eeeeee {
+	border-left: 1px solid #eeeeee;
+}
+.border-top-eeeeee {
+	border-top: 1px solid #eeeeee;
+}
+.border-bottom-eeeeee {
+	border-bottom: 1px solid #eeeeee;
+}
+.border-right-d4d4d4 {
+	border-right: 1px solid #d4d4d4;
+}
+.border-left-d4d4d4 {
+	border-left: 1px solid #d4d4d4;
+}
+.border-top-d4d4d4 {
+	border-top: 1px solid #d4d4d4;
+}
+.border-bottom-d4d4d4 {
+	border-bottom: 1px solid #d4d4d4;
+}
+.border-right-acacac {
+	border-right: 1px solid #acacac;
+}
+.border-left-acacac {
+	border-left: 1px solid #acacac;
+}
+.border-top-acacac {
+	border-top: 1px solid #acacac;
+}
+.border-bottom-acacac {
+	border-bottom: 1px solid #acacac;
+}
+.border-right-333333 {
+	border-right: 1px solid #333333;
+}
+.border-left-333333 {
+	border-left: 1px solid #333333;
+}
+.border-top-333333 {
+	border-top: 1px solid #333333;
+}
+.border-bottom-333333 {
+	border-bottom: 1px solid #333333;
+}
+.last-record {
+	border-bottom: 0;
+}
+.border-none {
+	border: 0;
+}
+.border-radius-5px {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.box-shadow-top {
+	-moz-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5) inset;
+	-webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5) inset;
+	box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5) inset;
+}
+.box-shadow-bottom-3px {
+	box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+}
+.effect-3d {
+	/*text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5), 2px 2px 0px rgba(255, 255, 255, 0.45);*/
+	/*text-shadow: 0 2px 0 rgba(0, 0, 0, 0.20), 0px 0px 5px rgba(255, 255, 255, 0.05);*/
+	/*text-shadow: -1px -1px white, 1px 1px #333;*/
+	/*text-shadow: 1px 1px rgba(0, 0, 0, 0.50), -1px -1px rgba(255, 255, 255, 0.5);*/
+	/*text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;*/
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3), 0px -1px rgba(255, 255, 255, 0.2);
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage borders Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage Padding starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.padding-left-0px {
+	padding-left: 0px;
+}
+.padding-right-0px {
+	padding-right: 0px;
+}
+.padding-top-0px {
+	padding-top: 0px;
+}
+.padding-bottom-0px {
+	padding-bottom: 0px;
+}
+.padding-left-5px {
+	padding-left: 5px;
+}
+.padding-right-5px {
+	padding-right: 5px;
+}
+.padding-top-5px {
+	padding-top: 5px;
+}
+.padding-bottom-5px {
+	padding-bottom: 5px;
+}
+.padding-left-10px {
+	padding-left: 10px;
+}
+.padding-right-10px {
+	padding-right: 10px;
+}
+.padding-top-10px {
+	padding-top: 10px;
+}
+.padding-bottom-10px {
+	padding-bottom: 10px;
+}
+.padding-left-15px {
+	padding-left: 15px;
+}
+.padding-right-15px {
+	padding-right: 15px;
+}
+.padding-top-15px {
+	padding-top: 15px;
+}
+.padding-bottom-15px {
+	padding-bottom: 15px;
+}
+.padding-left-20px {
+	padding-left: 20px;
+}
+.padding-right-20px {
+	padding-right: 20px;
+}
+.padding-top-20px {
+	padding-top: 20px;
+}
+.padding-bottom-20px {
+	padding-bottom: 20px;
+}
+.padding-left-40px {
+	padding-left: 40px;
+}
+.padding-right-40px {
+	padding-right: 40px;
+}
+.padding-top-40px {
+	padding-top: 40px;
+}
+.padding-bottom-40px {
+	padding-bottom: 40px;
+}
+.padding-left-60px {
+	padding-left: 60px;
+}
+.padding-right-60px {
+	padding-right: 60px;
+}
+.padding-top-60px {
+	padding-top: 60px;
+}
+.padding-bottom-60px {
+	padding-bottom: 60px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage padding ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage Margin starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.margin-left-5px {
+	margin-left: 5px;
+}
+.margin-right-5px {
+	margin-right: 5px;
+}
+.margin-top-5px {
+	margin-top: 5px;
+}
+.margin-bottom-5px {
+	margin-bottom: 5px;
+}
+.margin-left-10px {
+	margin-left: 10px;
+}
+.margin-right-10px {
+	margin-right: 10px;
+}
+.margin-top-10px {
+	margin-top: 10px;
+}
+.margin-bottom-10px {
+	margin-bottom: 10px;
+}
+.margin-left-15px {
+	margin-left: 15px;
+}
+.margin-right-15px {
+	margin-right: 15px;
+}
+.margin-top-15px {
+	margin-top: 15px;
+}
+.margin-bottom-15px {
+	margin-bottom: 15px;
+}
+.margin-left-20px {
+	margin-left: 20px;
+}
+.margin-right-20px {
+	margin-right: 20px;
+}
+.margin-top-20px {
+	margin-top: 20px;
+}
+.margin-bottom-20px {
+	margin-bottom: 20px;
+}
+.margin-left-30px {
+	margin-left: 30px;
+}
+.margin-right-30px {
+	margin-right: 30px;
+}
+.margin-top-30px {
+	margin-top: 30px;
+}
+.margin-bottom-30px {
+	margin-bottom: 30px;
+}
+.margin-left-40px {
+	margin-left: 40px;
+}
+.margin-right-40px {
+	margin-right: 40px;
+}
+.margin-top-40px {
+	margin-top: 40px;
+}
+.margin-bottom-40px {
+	margin-bottom: 40px;
+}
+.margin-left-60px {
+	margin-left: 60px;
+}
+.margin-right-60px {
+	margin-right: 60px;
+}
+.margin-top-60px {
+	margin-top: 40px;
+}
+.margin-bottom-60px {
+	margin-bottom: 60px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage Margin ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage Floating Starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to manage Floating Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to create Show/Hide Functionality Starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.show-inline {
+	display: inline;
+}
+.show-inline-block {
+	display: inline-block;
+}
+.invisible {
+	visibility: hidden;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Classes to create Show/Hide Functionality Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Miscellaneous Helping Classes Starts * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.affix {
+	position: fixed;
+}
+.take-complete-width {
+	width: 100%;
+}
+input, textarea, select, button {
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+	-moz-box-sizing: border-box; /* For all Gecko based browsers */
+	box-sizing: border-box;
+	font-size: 12px;
+}
+textarea {
+	resize: vertical;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 75px;
+}
+.scroll-y {
+	overflow-y: auto;
+}
+.scroll-x {
+	overflow-x: auto;
+}
+.icon-x {
+	margin-top: -2px;
+}
+.bordred-input-control {
+	background-color: #FFFFFF;
+	background-image: none;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555555;
+	display: block;
+	font-size: 14px;
+	height: 34px;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	vertical-align: middle;
+}
+.side-by-side-input1-of-2 {
+	float: left;
+	margin-right: 5px;
+	width: calc(50% - 5px);
+}
+.side-by-side-input2-of-2 {
+	width: 50%;
+}
+.z-index-1 {
+	z-index: 1;
+}
+.visible {
+	visibility: visible;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * Miscellaneous Helping Classes Ends * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/**************************************************************************************************************************************************/
+/* * Helper Classes Ends * */
+/**************************************************************************************************************************************************/
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/******************** Ketans Css Code ********************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.padding-bottom-13px{
+	padding-bottom: 13px;
+}
+.padding-top-13px{
+	padding-top: 13px;
+}
+.padding-right-13px{
+	padding-right: 13px;
+}
+.padding-left-13px{
+	padding-left: 13px;
+}
+.break-word{
+	word-break: break-all;
+}
+.table>thead>tr>td.view-all-information, .table>tbody>tr>td.view-all-information, .table>tfoot>tr>td.view-all-information {
+	padding-top: 0px;
+	padding-botttom: 5px;
+}
+.btn-primary.anchor{
+	color: #FFFFFF;
+}
+.line-through{
+	text-decoration: line-through;
+}
+.allergy{
+	text-decoration: underline;
+	color: #afafaf;	
+}
+.allergy:hover{
+	text-decoration: underline;
+	color: #999999;	
+}
+.allergy_detail{
+	color: #afafaf;	
+}
+.allergy_detail:hover{
+	color: #999999;	
+}
+.btn-primary.emmenu{
+	background-color: #2067a4;
+	border: 1px solid #1c5e97;
+}
+.btn-primary.emmenu:hover{
+	background-color: #16578f;
+	border: 1px solid #1c5e97;
+}
+.btn-link:hover, .btn-link:focus {
+	text-decoration: none; 
+}
+.dashboard-team-member-container .dashboard-team-member-action, .episode-framework-single-container .episode-framework-single-action {
+    visibility: hidden;
+}
+
+.dashboard-team-member-container:hover .dashboard-team-member-action, .episode-framework-single-container:hover .episode-framework-single-action {
+    visibility: visible;
+}
+.roleactive{
+	font-size: 14px;
+	color: #6CC009;
+}
+.table-hover > tbody > tr.activesave:hover{
+	background-color: #FFFFFF;
+}
+.activecolumn{
+	background-color: #f1f7fd;
+	border: 1px solid #000000;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/******************** Ketans Css Code End ********************/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
